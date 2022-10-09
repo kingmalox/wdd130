@@ -1,0 +1,46 @@
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+main {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #7b7b7b;
+    margin: 291.5px;
+
+}
+.img1 {
+    width: 750px;
+    margin: auto;
+    padding: auto;
+
+}
+.desk {
+    width: 150px;
+    border-radius: 75%;
+    position:relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: #3e3e3e;
+    margin: 30px;
+}
+.graphic {
+    width: 150px;
+    border-radius: 75%;
+    position:relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: #3e3e3e;
+    margin: 30px;
+}
+.person {
+    width: 150px;
+    border-radius: 75%;
+    position:relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: #3e3e3e;
+    margin: 30px;
+}
