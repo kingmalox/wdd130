@@ -2,7 +2,7 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 
-@import url('http://fonts.cdnfonts.com/css/josefin-sans');
+@import url('https://fonts.googleapis.com/css?family=Josefin Sans');
 
 :root {
    /* change the values below to your colors from your palette */
@@ -34,6 +34,8 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  font-family: 'Josefin Sans';
+  font-size: 22px;
 }
 img {
   display: block;
