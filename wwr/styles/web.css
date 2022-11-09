@@ -241,3 +241,33 @@ footer p {
         margin-top: 25px;
     }
 }
+
+/*Second page*/
+.outer{
+    display: block;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns:600px 1fr;
+    align-items: center;
+    margin: 80px;
+    font: 500 100%/1.5 system-ui;
+    border: 10px solid #292c1e;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    gap: 1rem;
+}
+.inner {
+    display: block;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns:600px 1fr;
+    align-items: center;
+    margin: 80px;
+    font: 500 100%/1.5 system-ui;
+    border: 10px solid #292c1e;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    gap: 1rem;
+    
+}
+ 
