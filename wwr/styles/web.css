@@ -269,6 +269,7 @@ footer p {
     box-shadow: 5px 5px 10px #6f7364;
     gap: 1rem;
 }
+/* CONTACT US Page */
 form {
     /* Center the form on the page */
     margin: 0 auto;
@@ -335,3 +336,16 @@ form {
        between the labels and their text fields */
     margin-left: 7.2em;
   }
+  #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
