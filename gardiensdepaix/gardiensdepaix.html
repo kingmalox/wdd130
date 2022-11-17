@@ -106,6 +106,22 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
     </script>
+    <script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
      <section id="hero-msg">
     <h2>Notre mission de Gardiens de paix est de créer plus d'emplois avec des travailleurs indépendants de nos communautés.</h2>
     <a href="gardiensdepaix.html"><h3>Donate Now</h3></a>
