@@ -76,7 +76,7 @@ img {vertical-align: middle;}
     width: 100%;
     text-align: center;
     font-family: Josefin Sans;
-    font-weight: 900;
+    font-weight: 900px;
     opacity: 0.5;
 }
 
@@ -227,12 +227,12 @@ h1{
   }
   
   /* Display the columns below each other instead of side by side on small screens */
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
+ @media screen and (max-width: 650px) {
+.column {
+    width: 100%;
+    display: block;
+}
+ }
   
   /* Add some shadows to create a card effect */
   .card {
