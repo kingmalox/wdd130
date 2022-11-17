@@ -13,10 +13,11 @@
         <img class="logo" src="images/de_Paix-removebg-preview.png" alt="Gardies de Paix Logo">
     </a>
     <nav>
-    <a href="gardiensdepaix.html">Accueil</a>
-    <a href="#">Nos Programmes</a>
-    <a href="#">A propos de nous</a>
-    <a href="#">Contactez-nous</a>
+      <a href="gardiensdepaix.html">Accueil</a>
+      <a href="#">Nos Programmes</a>
+      <a href="#">A propos de nous</a>
+      <a href="#">Contactez-nous</a>
+      <input type="text" placeholder="Search..">
     </nav>
 </header>
 <!-- Slideshow container -->
@@ -41,87 +42,55 @@
       <div class="text">Agriculture</div>
     </div>
     <div class="mySlides fade">
-        <div class="numbertext">4 / 6</div>
-        <img src="images/cow.jpg" alt="cow" style="width:1200px" height="430"> 
-        <div class="text">Elevage</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 6</div>
-        <img src="images/talor.jpg"  alt="talor" style="width:1200px" height="430"> 
-        <div class="text">Couture Homme</div>
-      </div>
-       <div class="mySlides fade">
-        <div class="numbertext">6 / 6</div>
-        <img src="images/chicken.jpg"  alt="chicken"  style="width:1200px" height="430"> 
-        <div class="text"> Elevage</div>
-      </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="numbertext">4 / 6</div>
+      <img src="images/cow.jpg" alt="cow" style="width:1200px" height="430"> 
+      <div class="text">Elevage</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="images/talor.jpg"  alt="talor" style="width:1200px" height="430"> 
+      <div class="text">Couture Homme</div>
+    </div>
+    <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/chicken.jpg"  alt="chicken"  style="width:1200px" height="430"> 
+    <div class="text"> Elevage</div>
 </div>
+  
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
 <script>
+let slideIndex = 0;
+showSlides();
     
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length} ;
-  for (i = 0; i < slides.length; i++) {
-     slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].classList.remove("slideractive");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].classList.add("slideractive");
-}
-
-    </script>
-    <script>
-    let slideIndex = 0;
-showSlides();
-
 function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-    </script>
-    <script>
-    let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-    </script>
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+</script>
+    
      <section id="hero-msg">
     <h2>Notre mission de Gardiens de paix est de créer plus d'emplois avec des travailleurs indépendants de nos communautés.</h2>
     <a href="gardiensdepaix.html"><h3>Donate Now</h3></a>
