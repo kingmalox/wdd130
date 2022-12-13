@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin Sans');
+@import url('https://fonts.googleapis.com/css?family=Josefin%20Sans');
 .content{
   display: grid;
   grid-template-columns: repeat(10, 1fr);
