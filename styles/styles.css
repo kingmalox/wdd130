@@ -1,34 +1,72 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: steelblue;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main Content */
 main {
     max-width: 840px;
-}
-
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    margin: 2rem auto;
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-
-}
-
-aside img {
-    width: 200px;
-    height: auto;
 }
 
 main img {
     width: 155px;
     height: auto;
+    display: block;
+    margin: 1rem 0;
 }
 
+/* Aside / Sidebar */
+aside {
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+/* Paragraph Styling */
 p {
+    margin: 0.5rem 0;
     padding: 0;
 }
 
+/* Footer */
 footer {
-    margin-top: 15px;
+    margin-top: 2rem;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
 }
