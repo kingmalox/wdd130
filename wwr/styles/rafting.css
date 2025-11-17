@@ -1,9 +1,8 @@
-
 :root {
-  --primary-color: #0b4f8a;      
-  --secondary-color: #f9d65c;    
-  --accent1-color: #0a2a43;      
-  --accent2-color: #ffffff;     
+  --primary-color: #0b4f8a;
+  --secondary-color: #f9d65c;
+  --accent1-color: #0a2a43;
+  --accent2-color: #ffffff;
   --heading-font: "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -14,6 +13,7 @@
   box-sizing: border-box;
 }
 
+/* Header */
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
@@ -24,27 +24,37 @@ body {
   color: var(--accent1-color);
 }
 
+/* Center page width */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-
-
+/* Headings */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
+/* General spacing */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
+/* Social media links (no underline) */
 .socialmedia a {
   text-decoration: none;
 }
 
+/* Social media icon sizing */
+.socialmedia img {
+  width: 40px;
+  height: auto;
+  margin: 0 8px;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
 }
@@ -77,6 +87,7 @@ nav, p, section, article {
   box-shadow: 0 0 10px rgb(0 0 0 / 25%);
 }
 
+/* Article image (happy rafter) */
 .hero article img {
   float: right;
   width: 125px;
