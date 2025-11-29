@@ -7,6 +7,7 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -19,16 +20,32 @@ body {
   line-height: 1.5;
 }
 
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
 header nav ul {
   display: flex;
   list-style: none;
   gap: 10px;
-}
-
-header nav ul li a:hover {
-  color: var(--accent1-color);
-  background-color: var(--secondary-color);
-  border-radius: 6px;
 }
 
 header nav ul li {
@@ -44,49 +61,61 @@ header nav ul li a {
   font-weight: bold;
 }
 
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-  padding: 16px;
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  align-items: center;
-}
-
-header img {
-  width: 100px;
-  height: auto;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-nav a {
-  color: var(--accent2-color);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 6px 10px;
-}
-
-nav a:hover {
-  background: var(--secondary-color);
+header nav ul li a:hover {
   color: var(--accent1-color);
-  border-radius: 4px;
+  background-color: var(--secondary-color);
+  border-radius: 6px;
 }
 
-main h2 {
+/* Main Headings */
+h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
-  margin-bottom: 4px;
   text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Hero image */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 300px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.80);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+}
+
+/* Section spacing */
+section {
+  margin: 16px 0;
+  padding: 8px 0;
 }
 
 .contact-info {
@@ -95,46 +124,72 @@ main h2 {
 }
 
 .contact-info p {
-  margin: 1px 0;
+  margin: 2px 0;
 }
 
 .contact-map-form {
   display: flex;
   gap: 14px;
-  margin-bottom: 40px;
   justify-content: space-between;
-  overflow-y: auto;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
+.contact-map-form iframe,
+.contact-map-form .form-container {
+    width: 48%;        
+    height: 350px;    
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 16px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;  
+}
 .contact-map-form iframe {
-  width: 50%;
-  height: 350px;
-  border-radius: 8px;
   border: 1px solid #ccc;
 }
 
 .contact-map-form form {
-  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.contact-map-form form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
 }
 
 .contact-map-form form input,
 .contact-map-form form textarea {
-  padding: 8px;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.contact-map-form form h2 {
+    text-align: center;
+    margin-bottom: 12px;
 }
 
 .contact-map-form form button {
   padding: 10px;
+  margin-top: 8px;
   background-color: var(--primary-color);
   color: var(--accent2-color);
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .contact-map-form form button:hover {
@@ -160,11 +215,6 @@ main h2 {
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
-.team-member figcaption {
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
 .team-member img {
   width: 100%;
   height: auto;
@@ -172,6 +222,12 @@ main h2 {
   margin-bottom: 8px;
 }
 
+.team-member figcaption {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Footer */
 footer {
   background: var(--primary-color);
   color: var(--accent2-color);
