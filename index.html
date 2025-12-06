@@ -4,54 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Maloba | WDD130</title>
-    <meta name="description" content="Christian Maloba WDD130 Exercise Page">
+    <meta name="description"
+        content="Welcome to White Water Rafting - thrilling adventures and unforgettable experiences.">
     <meta name="author" content="Christian Maloba">
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Home | White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
+        <img src="images/logo.png" alt="White Water Rafting Logo">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="wwr.html">Rafting Website</a></li>
-                <li><a href="https://www.linkedin.com/in/christian-maloba/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Christian Maloba | WDD 130</h1>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="White Water Rafting Adventure">
+            <div class="hero-text">
+                <h1>Experience the Thrill of White Water Rafting</h1>
+                <p>Join us for unforgettable adventures on the wildest rivers. Safe, fun, and full of excitement!</p>
+                <a href="trips.html" class="cta-button">Explore Trips</a>
+            </div>
+        </section>
 
-        <img src="images/maloba.jpg" alt="Maloba Profile Picture" class="profile">
+        <section class="about-brief">
+            <h2>About White Water Rafting</h2>
+            <p>Founded with a passion for adventure, we provide guided rafting trips suitable for all skill levels. Our
+                mission is to make every trip safe, fun, and memorable.</p>
+        </section>
 
-        <p>
-            I am Christian Maloba from the Democratic Republic of Congo. it is a pleasure to take on this course to
-            learn about these codes that are so crucial in our modern world of technology
-        </p>
+        <section class="featured-trips">
+            <h2>Featured Adventures</h2>
+            <div class="trip-cards">
+                <article>
+                    <img src="images/trip1.jpg" alt="Rapid Adventure">
+                    <h3>Rapid Adventure</h3>
+                    <p>Conquer challenging rapids over 2 days of exhilarating fun.</p>
+                </article>
 
-        <ul class="box">
-            <li><a href="https://churchofjesuschristtemples.org/abidjan-ivory-coast-temple/photographs/"
-                    target="_blank">Abidjan Ivory Coast Temple</a></li>
-            <li><a href="https://churchofjesuschristtemples.org/aba-nigeria-temple/photographs/" target="_blank">Aba
-                    Nigeria Temple</a></li>
-            <li><a href="https://churchofjesuschristtemples.org/cape-town-south-africa-temple/photographs/"
-                    target="_blank">Cape Town South Africa Temple</a></li>
-        </ul>
+                <article>
+                    <img src="images/trip2.jpg" alt="Family Fun">
+                    <h3>Family Fun</h3>
+                    <p>A calm 1-day rafting trip perfect for families and beginners.</p>
+                </article>
+
+                <article>
+                    <img src="images/trip3.jpg" alt="Sunset Float">
+                    <h3>Sunset Float</h3>
+                    <p>Relax and enjoy the serenity of a river sunset float.</p>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <aside class="box">
-        <h2>Democratic Republic of Congo</h2>
-        <img src="images/congo.jpg" alt="Congo">
-        <p>
-            The Democratic Republic of Congo (DR Congo) is a landlocked country located in the heart of Africa...
-        </p>
-    </aside>
-
     <footer>
-        <p>&copy; 🧑‍💻 Christian Maloba 🚩 Lubumbashi, DR Congo</p>
+        <p>&copy; 2025 White Water Rafting Co. | Christian Maloba</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </nav>
     </footer>
 </body>
 
